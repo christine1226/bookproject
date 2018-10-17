@@ -2,4 +2,6 @@
 
 Books:
 <br>
-<%= link_to  "Edit #{@author.name}", edit_author_path %>
+<%= button_to  "Edit #{@author.name}", edit_author_path %>
+<br>
+<%= button_to "Delete #{@author.name}", author_path, method: :delete %>
