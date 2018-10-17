@@ -6,7 +6,9 @@ Authors:
 
 <% @book.author_books.each do |auth_bk|%>
   <li> <%= link_to auth_bk.author.name, author_path(auth_bk.author_id) %> </li>
-  <%= button_to "Remove author",  %>
+  <br>
 <% end %>
 
 </ul>
+
+<%= form_for @authors.each do |auth| %>
