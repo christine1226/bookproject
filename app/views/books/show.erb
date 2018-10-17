@@ -1,0 +1,12 @@
+<h1> <%= @book.title %> ( <%= @book.pages %> pages)</h1>
+
+Authors:
+
+<ul>
+
+<% @book.author_books.each do |auth_bk|%>
+  <li> <%= link_to auth_bk.author.name, author_path(auth_bk.author_id) %> </li>
+  <%= button_to "Remove author",  %>
+<% end %>
+
+</ul>
