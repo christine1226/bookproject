@@ -1,0 +1,12 @@
+<h1>Update Author</h1>
+
+ <%= form_for @author do |f| %>
+   <%= f.label :name %>
+   <%= f.text_field :name %>
+   <br>
+   <%= f.label :birth_year %>
+   <%= f.number_field :birth_year %>
+   <br>
+   <%= f.submit "Update Author" %>
+
+<% end %>
